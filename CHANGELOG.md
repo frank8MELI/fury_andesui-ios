@@ -2,6 +2,7 @@
 ### 🚀 Features
 - AndesProgressIndicatorIndeterminate: support new size in AndesProgressIndicator | Authors: [@javff](https://github.com/javff)
 - AndesDropdown  component  | Authors: [@joalonsopint](https://github.com/joalonsopint)
+-AndesTagChoice component fix animation parameter | Authors: [@frank8MELI](https://github.com/frank8MELI)
 
 # v3.17.0
 ### 🚀 Features
