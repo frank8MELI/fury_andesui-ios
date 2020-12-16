@@ -46,8 +46,8 @@ import Foundation
         }
     }
 
-    /// Set if the view has to animate when tag was selected. Default value `true`
-    @objc public var shouldAnimateTag: Bool = true
+    /// Set if the view has to animate when tag was selected. Default value `false`
+    @objc public var shouldAnimateTag: Bool = false
 
     /// Callback invoked when tag is tapped
     internal var shouldSelectTag: (() -> Bool)?

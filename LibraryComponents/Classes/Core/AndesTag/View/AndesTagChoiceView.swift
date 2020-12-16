@@ -16,10 +16,12 @@ class AndesTagChoiceView: AndesTagSimpleView {
         self.accessibilityLabel = config.accessibilityLabel
     }
     override func setupRightContent() {
-            super.setupRightContent()
-            if config.shouldAnimateRightContent {
-               self.layoutIfNeeded()
+        super.setupRightContent()
+        if config.shouldAnimateRightContent {
+            UIView.animate(withDuration: 0.3) {
+                self.layoutIfNeeded()
             }
         }
+    }
 
 }
