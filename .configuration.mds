@@ -1,7 +1,7 @@
 {
     "platform": "iOS",
     "type": "testapp",
-    "module": "AndesUI-demoapp",
+    "module": "testapp",
     "description": "Release AndesUI",
     "build_type": "Local"
 }

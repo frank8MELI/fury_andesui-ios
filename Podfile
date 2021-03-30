@@ -8,7 +8,7 @@ project 'Example/AndesUI.xcodeproj'
 platform :ios, '10.0'
 use_frameworks!
 
-target 'AndesUI-demoapp' do
+target 'testapp' do
     pod 'AndesUI', :path => './'
     pod 'AndesUI/AndesCoachmark', :path => './'
     pod 'AndesUI/AndesBottomSheet', :path => './'

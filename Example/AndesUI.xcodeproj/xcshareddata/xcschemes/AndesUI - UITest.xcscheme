@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "AndesUI DemoApp.app"
-            BlueprintName = "AndesUI-demoapp"
+            BlueprintName = "testapp"
             ReferencedContainer = "container:AndesUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "AndesUI DemoApp.app"
-            BlueprintName = "AndesUI-demoapp"
+            BlueprintName = "testapp"
             ReferencedContainer = "container:AndesUI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

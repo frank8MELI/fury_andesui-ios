@@ -86,6 +86,7 @@
 		90F4781F243534F0001CEC90 /* BadgeObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4781D243534F0001CEC90 /* BadgeObjCViewController.m */; };
 		90F47820243534F0001CEC90 /* BadgeObjCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F4781E243534F0001CEC90 /* BadgeObjCViewController.xib */; };
 		90F4782224363A8F001CEC90 /* AndesBadgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F4782124363A8F001CEC90 /* AndesBadgeTests.swift */; };
+		929F2E47FB3A064902A3EF8C /* Pods_testapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCFBC50209E01B3871A9FDD /* Pods_testapp.framework */; };
 		9C2FFC6B23EDB1A50016292E /* whats_new.html in Resources */ = {isa = PBXBuildFile; fileRef = 9C2FFC6A23EDB1A50016292E /* whats_new.html */; };
 		9C592C0B2450A6B70038785E /* AndesTextAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C592C092450A6B70038785E /* AndesTextAreaTests.swift */; };
 		9C592C0C2450A6B70038785E /* AndesTextFieldSideComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C592C0A2450A6B70038785E /* AndesTextFieldSideComponentTests.swift */; };
@@ -123,7 +124,6 @@
 		CEA2960925128CAB00FB625F /* TextFieldsCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2960825128CAB00FB625F /* TextFieldsCodeViewController.swift */; };
 		CEA2960B25128DF900FB625F /* TextFieldsCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA2960A25128DF900FB625F /* TextFieldsCodeViewController.xib */; };
 		CEB95878252BC8CD00C74F01 /* AndesTextFieldCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB95876252BC7B000C74F01 /* AndesTextFieldCodeTests.swift */; };
-		D5B2BEE83C98A9D2820A3D02 /* Pods_AndesUI_demoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C838E738BF58DD1D411F6AE8 /* Pods_AndesUI_demoapp.framework */; };
 		DA3FB08D25D6DC8C00681116 /* AnalyticsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FB08C25D6DC8C00681116 /* AnalyticsHelper.swift */; };
 		DA3FB0A325DB033700681116 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA3FB0A225DB033700681116 /* GoogleService-Info.plist */; };
 		DA423BBE2600F9A900075A59 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA423BBD2600F9A900075A59 /* Commons.swift */; };
@@ -196,7 +196,7 @@
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = "AndesUI-demoapp";
+			remoteInfo = testapp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -217,9 +217,9 @@
 		03BE93FA256432C8004F3BBD /* DatePickerObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerObjCViewController.h; sourceTree = "<group>"; };
 		03BE93FB256432C8004F3BBD /* DatePickerObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerObjCViewController.m; sourceTree = "<group>"; };
 		03BE940025643307004F3BBD /* DatePickerObjCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerObjCViewController.xib; sourceTree = "<group>"; };
-		264F281C360F2CD2FB566DB8 /* Pods-AndesUI-demoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndesUI-demoapp.debug.xcconfig"; path = "Target Support Files/Pods-AndesUI-demoapp/Pods-AndesUI-demoapp.debug.xcconfig"; sourceTree = "<group>"; };
+		264F281C360F2CD2FB566DB8 /* Pods-testapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testapp.debug.xcconfig"; path = "Target Support Files/Pods-testapp/Pods-testapp.debug.xcconfig"; sourceTree = "<group>"; };
 		3A1AFEA97874D75790DD8C33 /* AndesUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AndesUI.podspec; path = ../AndesUI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3DC49555C6FBE3A14BB28AAC /* Pods-AndesUI-demoapp.mds.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndesUI-demoapp.mds.xcconfig"; path = "Target Support Files/Pods-AndesUI-demoapp/Pods-AndesUI-demoapp.mds.xcconfig"; sourceTree = "<group>"; };
+		3DC49555C6FBE3A14BB28AAC /* Pods-testapp.mds.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testapp.mds.xcconfig"; path = "Target Support Files/Pods-testapp/Pods-testapp.mds.xcconfig"; sourceTree = "<group>"; };
 		490589A024BE3C440044FD0B /* CardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRouter.swift; sourceTree = "<group>"; };
 		490589A324BE3CA70044FD0B /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		490589A424BE3CA70044FD0B /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
@@ -228,9 +228,10 @@
 		49BC924E24C8BF72007A03D3 /* CardObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardObjCViewController.m; sourceTree = "<group>"; };
 		49BC924F24C8BF72007A03D3 /* CardObjCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardObjCViewController.xib; sourceTree = "<group>"; };
 		49BC925224C8D72D007A03D3 /* UITestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestCard.swift; sourceTree = "<group>"; };
-		4BD981332F1EF3D884B271BA /* Pods-AndesUI-demoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndesUI-demoapp.release.xcconfig"; path = "Target Support Files/Pods-AndesUI-demoapp/Pods-AndesUI-demoapp.release.xcconfig"; sourceTree = "<group>"; };
+		4BD981332F1EF3D884B271BA /* Pods-testapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testapp.release.xcconfig"; path = "Target Support Files/Pods-testapp/Pods-testapp.release.xcconfig"; sourceTree = "<group>"; };
 		57ED041E2226FD1200614168 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57F34E912225DE0900454D8B /* AndesUIAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndesUIAppDelegate.swift; sourceTree = "<group>"; };
+		5BCFBC50209E01B3871A9FDD /* Pods_testapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* AndesUI DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AndesUI DemoApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* AndesUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AndesUI-Info.plist"; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -240,7 +241,6 @@
 		6A186A6423AC0FBB00420556 /* ButtonsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsRouter.swift; sourceTree = "<group>"; };
 		6A186A6623AC0FBB00420556 /* ButtonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		6A186A6723AC0FBB00420556 /* ButtonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonsViewController.xib; sourceTree = "<group>"; };
-		6A22DCBC23C918EA00BBFEA0 /* AndesUI-demoapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AndesUI-demoapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A22DCBD23C918EA00BBFEA0 /* AndesUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndesUIViewController.h; sourceTree = "<group>"; };
 		6A22DCBE23C918EA00BBFEA0 /* AndesUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndesUIViewController.m; sourceTree = "<group>"; };
 		6A22DCBF23C918EA00BBFEA0 /* AndesUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AndesUIViewController.xib; sourceTree = "<group>"; };
@@ -337,7 +337,6 @@
 		BADFA67925CB430E00165DFE /* AndesBadgeExtensionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndesBadgeExtensionRouter.swift; sourceTree = "<group>"; };
 		BADFA68425CC4FBD00165DFE /* AndesBadgeExtensionTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndesBadgeExtensionTabBarController.swift; sourceTree = "<group>"; };
 		BADFA69F25CC81D900165DFE /* AndesBadgeExtensionViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndesBadgeExtensionViewControllerMock.swift; sourceTree = "<group>"; };
-		C838E738BF58DD1D411F6AE8 /* Pods_AndesUI_demoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndesUI_demoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD53B634C5A21072D2256CA /* Pods_AndesUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndesUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE78E753252E2DF600AF47F3 /* TextFieldsCodeObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldsCodeObjCViewController.h; sourceTree = "<group>"; };
 		CE78E754252E2E9B00AF47F3 /* TextFieldsCodeObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldsCodeObjCViewController.m; sourceTree = "<group>"; };
@@ -348,6 +347,7 @@
 		DA3FB08C25D6DC8C00681116 /* AnalyticsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHelper.swift; sourceTree = "<group>"; };
 		DA3FB0A225DB033700681116 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA423BBD2600F9A900075A59 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		E082E2762613A4C500DE119F /* testapp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "testapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		E201BF4625BB508E00D48937 /* TooltipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipViewController.swift; sourceTree = "<group>"; };
 		E201BF4725BB508E00D48937 /* TooltipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TooltipViewController.xib; sourceTree = "<group>"; };
 		E201BF4F25BB50C100D48937 /* TooltipRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipRouter.swift; sourceTree = "<group>"; };
@@ -425,7 +425,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B2BEE83C98A9D2820A3D02 /* Pods_AndesUI_demoapp.framework in Frameworks */,
+				929F2E47FB3A064902A3EF8C /* Pods_testapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +555,12 @@
 		607FACD21AFB9204008FA782 /* Example for AndesUI */ = {
 			isa = PBXGroup;
 			children = (
+				E082E2762613A4C500DE119F /* testapp-Bridging-Header.h */,
 				DA3FB08B25D6DC7700681116 /* Helper */,
 				BADFA67E25CB431300165DFE /* UITabBarItem+AndesBadgeExtension */,
 				E201BF4525BB507000D48937 /* Tooltip */,
 				E2C015772575D218001B89C3 /* ProgressIndicator */,
 				9C9B5A7F23ECADA60007234B /* Additions */,
-				6A22DCBC23C918EA00BBFEA0 /* AndesUI-demoapp-Bridging-Header.h */,
 				57F34E912225DE0900454D8B /* AndesUIAppDelegate.swift */,
 				90530B05242BF9D9005E056A /* Badges */,
 				E662DEAF254B2F7000A86D10 /* BottomSheet */,
@@ -754,8 +754,8 @@
 			isa = PBXGroup;
 			children = (
 				E61E8ED6239E9A7A00F85A8A /* Foundation.framework */,
-				C838E738BF58DD1D411F6AE8 /* Pods_AndesUI_demoapp.framework */,
 				CAD53B634C5A21072D2256CA /* Pods_AndesUI_Tests.framework */,
+				5BCFBC50209E01B3871A9FDD /* Pods_testapp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -976,9 +976,9 @@
 		B495B93F2A96B12B0E7362AC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				264F281C360F2CD2FB566DB8 /* Pods-AndesUI-demoapp.debug.xcconfig */,
-				3DC49555C6FBE3A14BB28AAC /* Pods-AndesUI-demoapp.mds.xcconfig */,
-				4BD981332F1EF3D884B271BA /* Pods-AndesUI-demoapp.release.xcconfig */,
+				264F281C360F2CD2FB566DB8 /* Pods-testapp.debug.xcconfig */,
+				3DC49555C6FBE3A14BB28AAC /* Pods-testapp.mds.xcconfig */,
+				4BD981332F1EF3D884B271BA /* Pods-testapp.release.xcconfig */,
 				90AF92A176A10E92B84DB44C /* Pods-AndesUI_Tests.debug.xcconfig */,
 				9CFE8E9AC9CD4402E904E560 /* Pods-AndesUI_Tests.mds.xcconfig */,
 				EF090420DB071EC469790FD6 /* Pods-AndesUI_Tests.release.xcconfig */,
@@ -1379,9 +1379,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* AndesUI-demoapp */ = {
+		607FACCF1AFB9204008FA782 /* testapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AndesUI-demoapp" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "testapp" */;
 			buildPhases = (
 				097BA1335F4C0123A206C67C /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -1393,7 +1393,7 @@
 			);
 			dependencies = (
 			);
-			name = "AndesUI-demoapp";
+			name = testapp;
 			productName = AndesUI;
 			productReference = 607FACD01AFB9204008FA782 /* AndesUI DemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -1477,7 +1477,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* AndesUI-demoapp */,
+				607FACCF1AFB9204008FA782 /* testapp */,
 				607FACE41AFB9204008FA782 /* AndesUI_Tests */,
 				9CF562C8245892F5008AD504 /* AndesUI - UITests */,
 			);
@@ -1570,7 +1570,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AndesUI-demoapp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-testapp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1605,7 +1605,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AndesUI-demoapp/Pods-AndesUI-demoapp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-testapp/Pods-testapp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AndesUI/AndesUI.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
@@ -1630,7 +1630,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AndesUI-demoapp/Pods-AndesUI-demoapp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testapp/Pods-testapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE8359138D988798CBC4F163 /* [CP] Embed Pods Frameworks */ = {
@@ -1808,12 +1808,12 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* AndesUI-demoapp */;
+			target = 607FACCF1AFB9204008FA782 /* testapp */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 		9CF562CF245892F5008AD504 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* AndesUI-demoapp */;
+			target = 607FACCF1AFB9204008FA782 /* testapp */;
 			targetProxy = 9CF562CE245892F5008AD504 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1939,7 +1939,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 264F281C360F2CD2FB566DB8 /* Pods-AndesUI-demoapp.debug.xcconfig */;
+			baseConfigurationReference = 264F281C360F2CD2FB566DB8 /* Pods-testapp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1957,7 +1957,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.andesui;
 				PRODUCT_NAME = "AndesUI DemoApp";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.mercadolibre.*";
-				SWIFT_OBJC_BRIDGING_HEADER = "AndesUI/AndesUI-demoapp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AndesUI/testapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -1966,7 +1966,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BD981332F1EF3D884B271BA /* Pods-AndesUI-demoapp.release.xcconfig */;
+			baseConfigurationReference = 4BD981332F1EF3D884B271BA /* Pods-testapp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1984,7 +1984,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.andesui;
 				PRODUCT_NAME = "AndesUI DemoApp";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.mercadolibre.*";
-				SWIFT_OBJC_BRIDGING_HEADER = "AndesUI/AndesUI-demoapp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AndesUI/testapp-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -2093,7 +2093,7 @@
 		};
 		86D0F2C62492DF9C00E7F1D8 /* MDS */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DC49555C6FBE3A14BB28AAC /* Pods-AndesUI-demoapp.mds.xcconfig */;
+			baseConfigurationReference = 3DC49555C6FBE3A14BB28AAC /* Pods-testapp.mds.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2111,7 +2111,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.andesui;
 				PRODUCT_NAME = "AndesUI DemoApp";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.mercadolibre.*";
-				SWIFT_OBJC_BRIDGING_HEADER = "AndesUI/AndesUI-demoapp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AndesUI/testapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -2168,7 +2168,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "AndesUI-demoapp";
+				TEST_TARGET_NAME = testapp;
 			};
 			name = MDS;
 		};
@@ -2198,7 +2198,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "AndesUI-demoapp";
+				TEST_TARGET_NAME = testapp;
 			};
 			name = Debug;
 		};
@@ -2225,7 +2225,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "AndesUI-demoapp";
+				TEST_TARGET_NAME = testapp;
 			};
 			name = Release;
 		};
@@ -2242,7 +2242,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AndesUI-demoapp" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "testapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,

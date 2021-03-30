@@ -10,7 +10,7 @@
         },
         "sources-prefix": {
             "type": "filenameregexp",
-            "regexp": "/^AndesUI.*/",
+            "regexp": "/^M.*/",
             "include": "(\\.(m|h)$)",
             "exclude": [
                 "/\\+/",

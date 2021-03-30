@@ -1,5 +1,5 @@
 coverage_service: cobertura_xml
-scheme: AndesUI-demoapp
+scheme: testapp
 xcodeproj: Example/AndesUI.xcodeproj
 workspace: AndesUI.xcworkspace
 source_directory: LibraryComponents
