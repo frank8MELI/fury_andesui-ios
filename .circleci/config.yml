@@ -10,7 +10,7 @@ parameters:
     default: ""
 
 orbs:
-  meli: mercadolibre/ios@dev:build-timeout
+  meli: mercadolibre/ios@dev:public
 
 workflows:
   ci:
@@ -25,7 +25,7 @@ workflows:
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
-  build:
+  build-public:
     when:
       equal: [build, << pipeline.parameters.type >>]
     jobs:
