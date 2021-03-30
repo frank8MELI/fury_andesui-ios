@@ -10,7 +10,7 @@ parameters:
     default: ""
 
 orbs:
-  meli: mercadolibre/ios@volatile
+  meli: mercadolibre/ios@dev:build-timeout
 
 workflows:
   ci:
@@ -25,7 +25,6 @@ workflows:
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
-          no_output_timeout: 30m
   build:
     when:
       equal: [build, << pipeline.parameters.type >>]
