@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  AndesUI
+
+  Created by Nicolas Rostan Talasimov on 2/6/20.
+  Copyright © 2020 MercadoLibre. All rights reserved.
+*/
+"home.welcomeMsg.title" = "Check out what's new!";
+"home.welcomeMsg.desc" = "There you can see what are the things we\'ve been working on 😃.";
+"home.welcomeMsg.action" = "View What\'s New";
+"home.label.showcase" = "Showcase";
+
+"home.button.contribute.title" = "I want to contribute 🤝";
+
+"whatsnew.title" = "What's New";
+
+"message.button.changeConfig" = "Change Config";
+"message.button.updateConfig" = "Update";
+"message.button.showAgain" = "showAgain";
+"message.actions.pressedMsg" = "Action Pressed";
+"message.button.hideConfig" = "Hide Config";
+"message.error.emptyBody" = "Body can't be empty";
+"message.error.primaryNotSet" = "Can't have secondary action without primary";
+"message.error.linkAndActionsCoexistance" = "Can't have an action and a link at the same time";
+"message.default.title" = "Title here!";
+"message.default.body" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
+"badge.button.updateConfig" = "Update";
+
+"card.button.changeConfigButton" = "Change Configuration";
+"card.button.hideConfigButton" = "Hide Configuration";
+"card.button.updateButton" = "Update";
+"card.default.title" = "Title here!";
+"card.default.link" = "Link";
+"card.actions.linkMsg" = "Link action pressed";
+"card.actions.cardMsg" = "Card action pressed";
+
+
+"list.label.titleCell" = "Title cell default";
+"list.label.subTitleCell" = "Subtitle cell default";
+"list.actions.titleAlert" = "Title alert";
+"list.actions.msgAlert" = "Message alert";

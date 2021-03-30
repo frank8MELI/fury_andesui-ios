@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="AndesUI_DemoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="badgesBtn" destination="6KW-tw-Wm7" id="fHM-Jj-4Fy"/>
+                <outlet property="button" destination="pzX-2Z-8ZP" id="mDt-cx-9G3"/>
+                <outlet property="cardBtn" destination="RSJ-jO-HhG" id="sHG-0l-VNm"/>
+                <outlet property="checkboxBtn" destination="nQg-JB-1Sl" id="aJZ-e0-enA"/>
+                <outlet property="coachmarkBtn" destination="Qc3-Wv-8hf" id="VBE-zr-6ex"/>
+                <outlet property="contributingButton" destination="U75-6J-iuH" id="zA5-oc-yCo"/>
+                <outlet property="messagesBtn" destination="iA2-9b-o7k" id="hLz-sQ-2WS"/>
+                <outlet property="radioButton" destination="x2S-1u-jO7" id="8K5-wE-Row"/>
+                <outlet property="showcaseLabel" destination="wKp-SJ-Z6a" id="uvh-3g-Yns"/>
+                <outlet property="snackbarBtn" destination="eek-t9-Hwx" id="uNJ-EC-O2x"/>
+                <outlet property="specsButton" destination="wv9-5A-3H3" id="u7J-p4-SIQ"/>
+                <outlet property="stackView" destination="A0L-IL-kVl" id="l80-Ai-htC"/>
+                <outlet property="tagBtn" destination="6KW-tw-Wm7" id="3Zk-TD-HqS"/>
+                <outlet property="textFieldBtn" destination="9Hm-nl-pHd" id="f4e-tY-deE"/>
+                <outlet property="thumbnailBtn" destination="OpI-tK-pNV" id="AdS-n1-ggo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeMessage" destination="TeE-fb-BDr" id="Kgb-pA-hNG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLe-Ba-tiJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylf-cA-m4U">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1286"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="TeE-fb-BDr" customClass="AndesMessage" customModule="AndesUI">
+                                    <rect key="frame" x="16" y="16" width="382" height="128"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="ibHierarchy" value="quiet"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHc-S7-NqP">
+                                    <rect key="frame" x="16" y="1142" width="35.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="wv9-5A-3H3" customClass="AndesButton" customModule="AndesUI">
+                                    <rect key="frame" x="16" y="1176" width="382" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Specs"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="LARGE"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="ibHierarchy" value="QUIET"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="goToSpecsTapped:" destination="-1" eventType="touchUpInside" id="TjP-XV-0aU"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="U75-6J-iuH" userLabel="Contributing Button" customClass="AndesButton" customModule="AndesUI">
+                                    <rect key="frame" x="16" y="1226" width="382" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="ibHierarchy" value="quiet"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="goToContributingTapped:" destination="-1" eventType="touchUpInside" id="ztr-Qh-Zfv"/>
+                                    </connections>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A0L-IL-kVl">
+                                    <rect key="frame" x="16" y="208" width="382" height="904"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="vvC-pJ-vRm" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesButtons" label="Buttons showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Tooltip"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="LARGE"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tooltipTapped:" destination="-1" eventType="touchUpInside" id="VzN-Qm-BTw"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wnf-iF-Qc4" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="48" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesButtons" label="Buttons showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Progress Indicator"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="LARGE"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="progressIndicatorBtnTapped:" destination="-1" eventType="touchUpInside" id="d0j-Vw-nTy"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-Wv-8hf" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="96" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesButtons" label="Buttons showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Coachmark"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="LARGE"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToCoachmarkWasTapped:" destination="-1" eventType="touchUpInside" id="BwX-Fc-uMk"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="p8q-My-5kA" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="144" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesButtons" label="Buttons showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Bottom Sheet"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="LARGE"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="bottomSheetTapped:" destination="-1" eventType="touchUpInside" id="prW-Nd-yXX"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-2Z-8ZP" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="192" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesButtons" label="Buttons showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Button"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="LARGE"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToButtonWasTapped:" destination="-1" eventType="touchUpInside" id="i6J-ij-hBi"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="iA2-9b-o7k" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="240" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesMessages" label="Messages showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Message"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="LARGE"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToMessagesTapped:" destination="-1" eventType="touchUpInside" id="S44-PU-uV5"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Hm-nl-pHd" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="288" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesTextField" label="Text fields showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="AndesTextField"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="textfieldBtnTapped:" destination="-1" eventType="touchUpInside" id="NbS-FI-KZd"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Sz2-V9-d6x" userLabel="AndesCodeTextFieldButton" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="336" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesSnackbar" label="Snackbar showcases"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="AndesTextFieldCode"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToTextFieldsCodeTapped:" destination="-1" eventType="touchUpInside" id="wVq-zD-2GA"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="x2S-1u-jO7" userLabel="RadioButton" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="384" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesBadge" label="Badges showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes RadioButton"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToRadioButtonTapped:" destination="-1" eventType="touchUpInside" id="7g5-hf-jzW"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-tw-Wm7" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="432" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesBadge" label="Badges showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Badge"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToBadgesTapped:" destination="-1" eventType="touchUpInside" id="Msr-CP-Bkr"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="nQg-JB-1Sl" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="480" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesBadge" label="Badges showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Checkbox"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToCheckboxTapped:" destination="-1" eventType="touchUpInside" id="Jdc-Lk-uF9"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-gW-s5F" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="528" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesTag" label="Tag showcase"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Tag"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tagBtnTapped:" destination="-1" eventType="touchUpInside" id="Yg6-ek-I1h"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="eek-t9-Hwx" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="576" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesSnackbar" label="Snackbar showcases"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Snackbar"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="snackbarBtnTapped:" destination="-1" eventType="touchUpInside" id="E6y-h5-MfU"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="RSJ-jO-HhG" userLabel="Card Btn" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="624" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesCard" label="Card showcases"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Card"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="cardBtnTapped:" destination="-1" eventType="touchUpInside" id="4jA-EG-0D8"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="wkx-6B-Men" userLabel="Andes Date Picker" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="672" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesDatePicker" label="Andes Date Picker"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Date Picker"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToDatePickerTapped:" destination="-1" eventType="touchUpInside" id="pmc-DL-gJ3"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="OpI-tK-pNV" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="720" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesSnackbar" label="Snackbar showcases"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Thumbnail"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToThumbnailTapped:" destination="-1" eventType="touchUpInside" id="gzW-SD-V8C"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="ENY-UB-x7c" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="768" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesSnackbar" label="Snackbar showcases"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes List"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToListViewTapped:" destination="-1" eventType="touchUpInside" id="Fgl-Xh-yB1"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="66M-do-wIE" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="816" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesSnackbar" label="Snackbar showcases"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Andes Dropdown"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="dropdownTapped:" destination="-1" eventType="touchUpInside" id="f8s-Tc-zpv"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="QOI-AV-s62" customClass="AndesButton" customModule="AndesUI">
+                                            <rect key="frame" x="0.0" y="864" width="382" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="andesSnackbar" label="Snackbar showcases"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="AndesBadge in UITabBarItem"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="ibSize" value="Large"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="andesBadgeExtensionTapped:" destination="-1" eventType="touchUpInside" id="0IC-Mf-aD7"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="x2S-1u-jO7" firstAttribute="trailing" secondItem="9Hm-nl-pHd" secondAttribute="trailing" id="48j-EC-yGH"/>
+                                        <constraint firstItem="OpI-tK-pNV" firstAttribute="trailing" secondItem="eek-t9-Hwx" secondAttribute="trailing" id="5b3-oV-xPM"/>
+                                        <constraint firstItem="OpI-tK-pNV" firstAttribute="leading" secondItem="eek-t9-Hwx" secondAttribute="leading" id="7VW-87-kBA"/>
+                                        <constraint firstItem="RSJ-jO-HhG" firstAttribute="leading" secondItem="eek-t9-Hwx" secondAttribute="leading" id="9VQ-F6-8qD"/>
+                                        <constraint firstItem="eek-t9-Hwx" firstAttribute="trailing" secondItem="9Bv-gW-s5F" secondAttribute="trailing" id="HBs-Rs-U3Y"/>
+                                        <constraint firstItem="iA2-9b-o7k" firstAttribute="leading" secondItem="pzX-2Z-8ZP" secondAttribute="leading" id="KUL-h4-mtz"/>
+                                        <constraint firstItem="nQg-JB-1Sl" firstAttribute="trailing" secondItem="6KW-tw-Wm7" secondAttribute="trailing" id="T3t-x0-y4j"/>
+                                        <constraint firstItem="6KW-tw-Wm7" firstAttribute="trailing" secondItem="iA2-9b-o7k" secondAttribute="trailing" id="TK3-J5-Z4t"/>
+                                        <constraint firstItem="x2S-1u-jO7" firstAttribute="leading" secondItem="9Hm-nl-pHd" secondAttribute="leading" id="XLa-bv-cNz"/>
+                                        <constraint firstItem="RSJ-jO-HhG" firstAttribute="trailing" secondItem="eek-t9-Hwx" secondAttribute="trailing" id="ZHE-Pa-tY9"/>
+                                        <constraint firstItem="eek-t9-Hwx" firstAttribute="leading" secondItem="9Bv-gW-s5F" secondAttribute="leading" id="eTY-JI-CLj"/>
+                                        <constraint firstItem="6KW-tw-Wm7" firstAttribute="leading" secondItem="iA2-9b-o7k" secondAttribute="leading" id="iDI-vo-dFa"/>
+                                        <constraint firstItem="nQg-JB-1Sl" firstAttribute="leading" secondItem="6KW-tw-Wm7" secondAttribute="leading" id="jOv-Qy-bS1"/>
+                                        <constraint firstItem="iA2-9b-o7k" firstAttribute="trailing" secondItem="pzX-2Z-8ZP" secondAttribute="trailing" id="k3u-A8-eQR"/>
+                                        <constraint firstItem="9Hm-nl-pHd" firstAttribute="leading" secondItem="A0L-IL-kVl" secondAttribute="leading" id="rUP-UK-uIP"/>
+                                        <constraint firstItem="9Bv-gW-s5F" firstAttribute="trailing" secondItem="6KW-tw-Wm7" secondAttribute="trailing" id="rhe-Vf-qeY"/>
+                                        <constraint firstItem="9Bv-gW-s5F" firstAttribute="leading" secondItem="6KW-tw-Wm7" secondAttribute="leading" id="sxy-bc-6GO"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Showcase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKp-SJ-Z6a">
+                                    <rect key="frame" x="16" y="174" width="69.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="TeE-fb-BDr" firstAttribute="top" secondItem="ylf-cA-m4U" secondAttribute="top" constant="16" id="CM3-mc-2u1"/>
+                                <constraint firstItem="pzX-2Z-8ZP" firstAttribute="leading" secondItem="TeE-fb-BDr" secondAttribute="leading" id="Eon-kT-UxY"/>
+                                <constraint firstItem="wv9-5A-3H3" firstAttribute="leading" secondItem="U75-6J-iuH" secondAttribute="leading" id="Ori-bm-hl7"/>
+                                <constraint firstItem="wv9-5A-3H3" firstAttribute="leading" secondItem="ylf-cA-m4U" secondAttribute="leading" constant="16" id="Tqi-v9-8VT"/>
+                                <constraint firstAttribute="bottom" secondItem="U75-6J-iuH" secondAttribute="bottom" constant="20" symbolic="YES" id="UA2-Sb-73C"/>
+                                <constraint firstAttribute="trailing" secondItem="TeE-fb-BDr" secondAttribute="trailing" constant="16" id="aJL-XR-4Rf"/>
+                                <constraint firstItem="A0L-IL-kVl" firstAttribute="top" secondItem="wKp-SJ-Z6a" secondAttribute="bottom" constant="16" id="bIV-zw-iOl"/>
+                                <constraint firstItem="wv9-5A-3H3" firstAttribute="leading" secondItem="U75-6J-iuH" secondAttribute="leading" id="brO-KY-vPt"/>
+                                <constraint firstItem="wKp-SJ-Z6a" firstAttribute="leading" secondItem="A0L-IL-kVl" secondAttribute="leading" id="fEO-Xy-t5d"/>
+                                <constraint firstItem="mHc-S7-NqP" firstAttribute="top" secondItem="A0L-IL-kVl" secondAttribute="bottom" constant="30" id="feb-fL-pDD"/>
+                                <constraint firstItem="wv9-5A-3H3" firstAttribute="trailing" secondItem="U75-6J-iuH" secondAttribute="trailing" id="iwq-ih-Mg7"/>
+                                <constraint firstItem="wKp-SJ-Z6a" firstAttribute="top" secondItem="TeE-fb-BDr" secondAttribute="bottom" constant="30" id="lRb-3d-l67"/>
+                                <constraint firstItem="pzX-2Z-8ZP" firstAttribute="trailing" secondItem="TeE-fb-BDr" secondAttribute="trailing" id="ldD-yW-bbt"/>
+                                <constraint firstItem="mHc-S7-NqP" firstAttribute="leading" secondItem="wv9-5A-3H3" secondAttribute="leading" id="n3g-oQ-CIQ"/>
+                                <constraint firstItem="TeE-fb-BDr" firstAttribute="leading" secondItem="ylf-cA-m4U" secondAttribute="leading" constant="16" id="u8q-3Z-htU"/>
+                                <constraint firstItem="wv9-5A-3H3" firstAttribute="bottom" secondItem="U75-6J-iuH" secondAttribute="top" constant="-10" id="xLm-Ko-2CI"/>
+                                <constraint firstAttribute="trailing" secondItem="wv9-5A-3H3" secondAttribute="trailing" constant="16" id="xug-S3-pe8"/>
+                                <constraint firstItem="wv9-5A-3H3" firstAttribute="top" secondItem="mHc-S7-NqP" secondAttribute="bottom" constant="16" id="znp-pP-m7u"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ylf-cA-m4U" secondAttribute="bottom" id="B7c-V3-PAC"/>
+                        <constraint firstItem="ylf-cA-m4U" firstAttribute="top" secondItem="dLe-Ba-tiJ" secondAttribute="top" id="EPO-p2-Raz"/>
+                        <constraint firstAttribute="trailing" secondItem="ylf-cA-m4U" secondAttribute="trailing" id="KpO-0b-hdU"/>
+                        <constraint firstItem="ylf-cA-m4U" firstAttribute="leading" secondItem="dLe-Ba-tiJ" secondAttribute="leading" id="TaO-6U-8hf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dLe-Ba-tiJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3GN-c5-q2R"/>
+                <constraint firstItem="ylf-cA-m4U" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="K7Z-gA-tD8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dLe-Ba-tiJ" secondAttribute="bottom" id="Prg-zQ-xWH"/>
+                <constraint firstItem="dLe-Ba-tiJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dYX-61-QEO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dLe-Ba-tiJ" secondAttribute="trailing" id="ic7-qC-p0A"/>
+                <constraint firstItem="ylf-cA-m4U" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.621027" priority="250" id="o48-nA-0wR"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="144.64285714285714"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SnackbarObjCViewController">
+            <connections>
+                <outlet property="showFirstSnackbar" destination="x4S-pz-LFl" id="ySL-tf-G0A"/>
+                <outlet property="showSecondSnackbar" destination="gUT-Bd-UMh" id="k7R-Oq-IWP"/>
+                <outlet property="showThirdSnackbar" destination="dHd-2B-on3" id="yIX-N7-yEr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXb-8Z-9en">
+                    <rect key="frame" x="24" y="68" width="366" height="119.5"/>
+                    <string key="text">This Screen is testing AndesSnackbar in Objective-C language.  Tap some of the next buttons to show different Snackbar variants.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="311" placeholderIntrinsicHeight="77" translatesAutoresizingMaskIntoConstraints="NO" id="x4S-pz-LFl" customClass="AndesButton" customModule="AndesUI">
+                    <rect key="frame" x="51.5" y="211.5" width="311" height="77"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <action selector="showFirstSnackbarTapped:" destination="-1" eventType="touchUpInside" id="YE1-TN-IoA"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="349" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="gUT-Bd-UMh" customClass="AndesButton" customModule="AndesUI">
+                    <rect key="frame" x="32.5" y="312.5" width="349" height="74"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <action selector="showSecondSnackbarTapped:" destination="-1" eventType="touchUpInside" id="qQc-Bp-NSA"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="349" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-2B-on3" customClass="AndesButton" customModule="AndesUI">
+                    <rect key="frame" x="32.5" y="410.5" width="349" height="74"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <action selector="showThirdSnackbarTapped:" destination="-1" eventType="touchUpInside" id="s8m-uz-7Bc"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="x4S-pz-LFl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="McZ-wC-LXf"/>
+                <constraint firstItem="gUT-Bd-UMh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wg9-bJ-io3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jXb-8Z-9en" secondAttribute="trailing" constant="24" id="YWz-Rr-dk1"/>
+                <constraint firstItem="dHd-2B-on3" firstAttribute="top" secondItem="gUT-Bd-UMh" secondAttribute="bottom" constant="24" id="a11-GG-gau"/>
+                <constraint firstItem="jXb-8Z-9en" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="24" id="e1N-KX-hdG"/>
+                <constraint firstItem="x4S-pz-LFl" firstAttribute="top" secondItem="jXb-8Z-9en" secondAttribute="bottom" constant="24" id="leC-ko-2zt"/>
+                <constraint firstItem="dHd-2B-on3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vo8-ln-z8c"/>
+                <constraint firstItem="jXb-8Z-9en" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="24" id="wka-fN-iO4"/>
+                <constraint firstItem="gUT-Bd-UMh" firstAttribute="top" secondItem="x4S-pz-LFl" secondAttribute="bottom" constant="24" id="znl-Cy-F33"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+</document>

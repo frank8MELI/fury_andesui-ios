@@ -1,0 +1,8 @@
+{
+    "project_id" : "AndesUI",
+    "load": [
+        "/usr/local/opt/arc-lint"
+    ],
+    "xcodebuild.workspace": "AndesUI.xcworkspace",
+    "xcodebuild.scheme": "testapp"
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AndesRadioButtonViewController" customModule="AndesUI_DemoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="alignTxt" destination="LCw-QB-Mfv" id="ptX-m3-Wwg"/>
+                <outlet property="clearBtn" destination="jAR-mm-eeW" id="HiL-mP-l2v"/>
+                <outlet property="numberLinesTxt" destination="wIw-6s-vyh" id="INt-VL-AwJ"/>
+                <outlet property="radioButton" destination="zhE-sd-tpD" id="DpP-qY-LKm"/>
+                <outlet property="radioButtonTxt" destination="RnL-ig-JUl" id="5GZ-Qc-QyS"/>
+                <outlet property="statusTxt" destination="hYw-3i-glO" id="TD0-Zy-Pir"/>
+                <outlet property="typeText" destination="qgF-MF-lth" id="R4E-5n-8Tx"/>
+                <outlet property="updateBtn" destination="QmN-5v-7sp" id="14d-FC-W6P"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9b9-b6-RNb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bW-nu-PyM">
+                    <rect key="frame" x="50" y="74" width="314" height="476"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkj-iL-29z">
+                            <rect key="frame" x="0.0" y="143" width="37.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67m-Gz-5nL">
+                            <rect key="frame" x="0.0" y="184" width="49" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Align" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-Fs-LXn">
+                            <rect key="frame" x="0.0" y="225" width="38.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="checkbox type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgF-MF-lth" userLabel="radiobutton type">
+                            <rect key="frame" x="178" y="136.5" width="136" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qgF-MF-lth" secondAttribute="height" multiplier="4:1" id="xf0-mr-CgJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="checkbox status" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYw-3i-glO" userLabel="radiobutton status">
+                            <rect key="frame" x="178" y="177.5" width="136" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hYw-3i-glO" secondAttribute="height" multiplier="4:1" id="dEw-Xy-IcB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="checkbox align" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LCw-QB-Mfv" userLabel="radiobbuton align">
+                            <rect key="frame" x="178" y="218.5" width="136" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="LCw-QB-Mfv" secondAttribute="height" multiplier="4:1" id="oh9-jY-Ayp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmN-5v-7sp">
+                            <rect key="frame" x="8" y="361" width="51" height="30"/>
+                            <state key="normal" title="Update"/>
+                            <connections>
+                                <action selector="updateTapped:" destination="-1" eventType="touchUpInside" id="doT-su-8nS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAR-mm-eeW">
+                            <rect key="frame" x="270" y="361" width="36" height="30"/>
+                            <state key="normal" title="Clear"/>
+                            <connections>
+                                <action selector="clearTapped:" destination="-1" eventType="touchUpInside" id="rJX-3F-wfW"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="45" translatesAutoresizingMaskIntoConstraints="NO" id="zhE-sd-tpD" customClass="AndesRadioButton" customModule="AndesUI">
+                            <rect key="frame" x="0.0" y="30" width="314" height="45"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Radio Button"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="ibType" value="idle"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="ibStatus" value="unselected"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="ibAlign" value="left"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Lines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRM-oh-Ikv">
+                            <rect key="frame" x="0.0" y="266" width="126" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="number of lines" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wIw-6s-vyh">
+                            <rect key="frame" x="244" y="259.5" width="70" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="R6s-AW-j9z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Checkbox text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RnL-ig-JUl" userLabel="radiobutton text">
+                            <rect key="frame" x="8" y="307" width="298" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qgF-MF-lth" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rkj-iL-29z" secondAttribute="trailing" constant="10" id="0i5-6e-QKP"/>
+                        <constraint firstAttribute="trailing" secondItem="hYw-3i-glO" secondAttribute="trailing" id="27O-71-JRg"/>
+                        <constraint firstItem="wIw-6s-vyh" firstAttribute="centerY" secondItem="kRM-oh-Ikv" secondAttribute="centerY" id="2OH-Jb-IFQ"/>
+                        <constraint firstItem="8ga-Fs-LXn" firstAttribute="leading" secondItem="4bW-nu-PyM" secondAttribute="leading" id="3U3-aB-K48"/>
+                        <constraint firstAttribute="trailing" secondItem="jAR-mm-eeW" secondAttribute="trailing" constant="8" id="8ab-lQ-LFr"/>
+                        <constraint firstItem="Rkj-iL-29z" firstAttribute="leading" secondItem="4bW-nu-PyM" secondAttribute="leading" id="ATt-Yo-mQX"/>
+                        <constraint firstItem="RnL-ig-JUl" firstAttribute="leading" secondItem="4bW-nu-PyM" secondAttribute="leading" constant="8" id="AUp-0n-CU1"/>
+                        <constraint firstItem="67m-Gz-5nL" firstAttribute="leading" secondItem="4bW-nu-PyM" secondAttribute="leading" id="Bel-in-KSz"/>
+                        <constraint firstItem="zhE-sd-tpD" firstAttribute="top" secondItem="4bW-nu-PyM" secondAttribute="top" constant="30" id="Hv4-Ve-jOL"/>
+                        <constraint firstItem="67m-Gz-5nL" firstAttribute="top" secondItem="Rkj-iL-29z" secondAttribute="bottom" constant="20" id="IfM-QN-mCX"/>
+                        <constraint firstItem="kRM-oh-Ikv" firstAttribute="top" secondItem="8ga-Fs-LXn" secondAttribute="bottom" constant="20" id="JZl-Sw-ba7"/>
+                        <constraint firstAttribute="trailing" secondItem="RnL-ig-JUl" secondAttribute="trailing" constant="8" id="K9O-nf-HVU"/>
+                        <constraint firstAttribute="trailing" secondItem="zhE-sd-tpD" secondAttribute="trailing" id="KJO-FX-BcG"/>
+                        <constraint firstAttribute="trailing" secondItem="qgF-MF-lth" secondAttribute="trailing" id="Nku-7P-AuS"/>
+                        <constraint firstItem="kRM-oh-Ikv" firstAttribute="leading" secondItem="4bW-nu-PyM" secondAttribute="leading" id="QCd-3s-847"/>
+                        <constraint firstItem="QmN-5v-7sp" firstAttribute="top" secondItem="RnL-ig-JUl" secondAttribute="bottom" constant="20" id="QVn-WA-jFi"/>
+                        <constraint firstItem="RnL-ig-JUl" firstAttribute="top" secondItem="kRM-oh-Ikv" secondAttribute="bottom" constant="20" id="VBV-Lv-7ou"/>
+                        <constraint firstItem="QmN-5v-7sp" firstAttribute="leading" secondItem="4bW-nu-PyM" secondAttribute="leading" constant="8" id="VoV-1B-OpJ"/>
+                        <constraint firstItem="zhE-sd-tpD" firstAttribute="centerX" secondItem="4bW-nu-PyM" secondAttribute="centerX" id="fNQ-hH-F3C"/>
+                        <constraint firstItem="Rkj-iL-29z" firstAttribute="top" secondItem="4bW-nu-PyM" secondAttribute="top" constant="143" id="feD-Pq-LyO"/>
+                        <constraint firstItem="jAR-mm-eeW" firstAttribute="top" secondItem="RnL-ig-JUl" secondAttribute="bottom" constant="20" id="fwj-51-VBf"/>
+                        <constraint firstItem="qgF-MF-lth" firstAttribute="centerY" secondItem="Rkj-iL-29z" secondAttribute="centerY" id="hYV-Ol-Et1"/>
+                        <constraint firstAttribute="trailing" secondItem="wIw-6s-vyh" secondAttribute="trailing" id="ivC-kL-gWw"/>
+                        <constraint firstItem="hYw-3i-glO" firstAttribute="centerY" secondItem="67m-Gz-5nL" secondAttribute="centerY" id="jSx-Ri-rfC"/>
+                        <constraint firstItem="LCw-QB-Mfv" firstAttribute="centerY" secondItem="8ga-Fs-LXn" secondAttribute="centerY" id="jdc-Zw-AGa"/>
+                        <constraint firstItem="wIw-6s-vyh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kRM-oh-Ikv" secondAttribute="trailing" constant="10" id="m3a-kX-1JU"/>
+                        <constraint firstItem="LCw-QB-Mfv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8ga-Fs-LXn" secondAttribute="trailing" constant="10" id="seb-Se-5eZ"/>
+                        <constraint firstItem="zhE-sd-tpD" firstAttribute="leading" secondItem="4bW-nu-PyM" secondAttribute="leading" id="v7S-3u-r8j"/>
+                        <constraint firstAttribute="bottom" secondItem="QmN-5v-7sp" secondAttribute="bottom" constant="85" id="vLk-pf-SXn"/>
+                        <constraint firstItem="hYw-3i-glO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="67m-Gz-5nL" secondAttribute="trailing" constant="10" id="vp9-kJ-Pnh"/>
+                        <constraint firstAttribute="trailing" secondItem="LCw-QB-Mfv" secondAttribute="trailing" id="wug-H8-z7Q"/>
+                        <constraint firstItem="8ga-Fs-LXn" firstAttribute="top" secondItem="67m-Gz-5nL" secondAttribute="bottom" constant="20" id="yjX-U9-BcL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4bW-nu-PyM" secondAttribute="trailing" constant="50" id="7D5-GE-Zqh"/>
+                <constraint firstItem="4bW-nu-PyM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="enP-8e-H8y"/>
+                <constraint firstItem="4bW-nu-PyM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="nss-dD-dc5"/>
+                <constraint firstItem="4bW-nu-PyM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="zUV-sx-jX5"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AndesShowcasePageViewController" customModule="AndesUI_DemoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="I0y-z4-9mO" id="4oi-Lt-GcZ"/>
+                <outlet property="pageControl" destination="5PQ-5q-wCB" id="oJ9-9f-FLj"/>
+                <outlet property="topConstraint" destination="0T7-as-Qtb" id="rJc-Tr-RPf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="C0j-i6-lhU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0y-z4-9mO">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="5PQ-5q-wCB">
+                            <rect key="frame" x="195.5" y="766" width="23" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="cdj-2V-MEZ"/>
+                            </constraints>
+                        </pageControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="5PQ-5q-wCB" firstAttribute="centerX" secondItem="I0y-z4-9mO" secondAttribute="centerX" id="LLZ-lb-yGb"/>
+                        <constraint firstAttribute="bottom" secondItem="5PQ-5q-wCB" secondAttribute="bottom" constant="15" id="gfR-N3-cHV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="I0y-z4-9mO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0Nc-Ci-pLO"/>
+                <constraint firstItem="I0y-z4-9mO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0T7-as-Qtb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I0y-z4-9mO" secondAttribute="trailing" id="4bV-gk-81g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="I0y-z4-9mO" secondAttribute="bottom" id="yJo-A2-qjq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+</document>

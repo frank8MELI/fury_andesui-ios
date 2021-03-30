@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SnackbarViewController" customModule="AndesUI_DemoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="4GZ-v7-TT8" id="Snm-ik-wqL"/>
+                <outlet property="typeSegmentedControl" destination="dlI-1n-re3" id="svW-Lj-9rg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GZ-v7-TT8">
+                    <rect key="frame" x="32" y="76" width="350" height="101.5"/>
+                    <string key="text">AndesSnackbar is a short message that can be displayed for a defined time or require user action.  Snackbars disappear automatically.
+</string>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dlI-1n-re3">
+                    <rect key="frame" x="56" y="193.5" width="302" height="32"/>
+                    <segments>
+                        <segment title="Neutral" width="100"/>
+                        <segment title="Success" width="100"/>
+                        <segment title="Error" width="100"/>
+                    </segments>
+                    <connections>
+                        <action selector="typeSegmentSelected:" destination="-1" eventType="valueChanged" id="bYO-DB-5fX"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="dlI-1n-re3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1YM-ls-0Tu"/>
+                <constraint firstItem="4GZ-v7-TT8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="59F-cx-yse"/>
+                <constraint firstItem="4GZ-v7-TT8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="I4t-tW-SNo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4GZ-v7-TT8" secondAttribute="trailing" constant="32" id="MbY-ZQ-ZMn"/>
+                <constraint firstItem="dlI-1n-re3" firstAttribute="top" secondItem="4GZ-v7-TT8" secondAttribute="bottom" constant="16" id="f9S-rL-3fJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="128" y="100"/>
+        </view>
+    </objects>
+</document>
