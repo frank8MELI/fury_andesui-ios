@@ -25,11 +25,11 @@ workflows:
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
-  build-public:
+  build:
     when:
       equal: [build, << pipeline.parameters.type >>]
     jobs:
-      - meli/build:
+      - meli/build-public:
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
