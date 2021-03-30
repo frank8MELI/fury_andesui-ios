@@ -2,7 +2,7 @@
     "linters": {
         "oclint": {
             "type": "oclint",
-            "include": "(\\.(m|h|swift)$)",
+            "include": "(\\.(m|h)$)",
             "exclude": [
                 "(Tests/*)",
                 "(Example/*)"
@@ -22,7 +22,7 @@
         "cpd": {
             "type": "cpd-cli",
             "include": "(\\.(m|h)$)",
-            "language": "swift",
+            "language": "objectivec",
             "paths": [
                 "LibraryComponents",
                 "Tests"
