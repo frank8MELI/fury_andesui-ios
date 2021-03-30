@@ -1,8 +1,8 @@
-# OS X
-.DS_Store
 
 # Xcode
+.DS_Store
 build/
+Build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -11,27 +11,42 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
-*.xccheckout
+!default.xcworkspace
+xcuserdata
 profile
 *.moved-aside
 DerivedData
-*.hmap
-*.ipa
-*.idea/
-*.log
-
-# Linters
-compile_commands.json
-*.out
-mobile-cd
-
-# Bundler
-.bundle
-vendor/
-
-# CocoaPods
+.idea/
+.vscode/
 Pods/
+Podfile.lock
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+xcuserdata
+MercadoLibre.xcodeproj/project.xcworkspace/xcshareddata/
+MercadoLibre.xcworkspace/xcshareddata/
+MercadoLibre.xcworkspace/xcshareddata/xcschemes
+*.orig
+/.project
+*.gcno
+*.gcda
+fastlane/build
+fastlane/report.xml
+fastlane/.env.*
+fastlane/README.md
+
+# Travis
+*.log
+*.out
+Screenshots
+mobile-cd
+compile_commands.json
 
 coverage/
-screenshots/*
+
+# Bundler
+.bundle/
+vendor/

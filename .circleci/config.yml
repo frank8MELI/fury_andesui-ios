@@ -1,4 +1,3 @@
-
 version: 2.1
 
 parameters:
@@ -10,19 +9,28 @@ parameters:
     type: string
     default: ""
 
+# Default workflow will run on all branches except releases
+default-workflow: &defaultWorkflow
+  filters:
+    branches:
+      ignore:
+        - master
+        - /release\/.*$/
+        - /v\/.*$/
+
 orbs:
-  meli: mercadolibre/ios@volatile
+  meli: mercadolibre/ios@dev:publiclib
 
 workflows:
   ci:
-    when:
-      equal: [ci, << pipeline.parameters.type >>]
     jobs:
       - meli/test:
+          <<: *defaultWorkflow
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
       - meli/lint:
+          <<: *defaultWorkflow
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
@@ -30,7 +38,7 @@ workflows:
     when:
       equal: [build, << pipeline.parameters.type >>]
     jobs:
-      - meli/build:
+      - meli/build-public:
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
