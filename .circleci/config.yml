@@ -25,6 +25,7 @@ workflows:
           build_context: << pipeline.parameters.build_context >>
           pipeline_id: << pipeline.id >>
           pipeline_number: << pipeline.number >>
+          no_output_timeout: 30m
   build:
     when:
       equal: [build, << pipeline.parameters.type >>]
