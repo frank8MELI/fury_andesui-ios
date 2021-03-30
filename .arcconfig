@@ -4,5 +4,5 @@
         "/usr/local/opt/arc-lint"
     ],
     "xcodebuild.workspace": "AndesUI.xcworkspace",
-    "xcodebuild.scheme": "AndesUI-demoapp"
+    "xcodebuild.scheme": "testapp"
 }
