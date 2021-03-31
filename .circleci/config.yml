@@ -14,7 +14,6 @@ orbs:
 
 jobs:
   run-mds:
-    <<: *defaultJob
     steps:
       # Checkout to our repo and add the ssh keys for doing git stuff
       - checkout
@@ -22,7 +21,6 @@ jobs:
       - run:
           name: Run MDS demoapp
           command: ./scripts/run_mds.sh
-
 
 workflows:
   ci:
