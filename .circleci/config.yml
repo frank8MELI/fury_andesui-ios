@@ -25,6 +25,7 @@ default: &defaultJob
   shell: /bin/bash --login
 
 jobs:
+  <<: *defaultJob
   run-mds:
     steps:
       # Checkout to our repo and add the ssh keys for doing git stuff
