@@ -12,6 +12,18 @@ parameters:
 orbs:
   meli: mercadolibre/ios@dev:public
 
+####
+# Default job.
+# This job simply defines the iOS image, some environment variables
+# and stuff that all jobs should have
+##
+default: &defaultJob
+  # Set the xcode version this virtual machine will use
+  macos:
+    xcode: "12.0.0"
+  # We need to set this for RVM.
+  shell: /bin/bash --login
+
 jobs:
   run-mds:
     steps:
