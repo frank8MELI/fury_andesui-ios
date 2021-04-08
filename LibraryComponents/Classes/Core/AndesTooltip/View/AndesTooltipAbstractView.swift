@@ -46,7 +46,7 @@ class AndesTooltipAbstractView: UIView, AndesTooltipView {
     }
 
     func show(in view: UIView, within superView: UIView, position: AndesTooltipPosition) {
-        tooltip.show(target: view, withinSuperview: superView, position: position)
+        tooltip.show(target: view, withinSuperview: superView, position: position, fixedWidth: config.fixedWidth)
     }
 
     @objc func dismiss() {
@@ -64,6 +64,7 @@ class AndesTooltipAbstractView: UIView, AndesTooltipView {
         contentLabel.text = config.content
         contentLabel.accessibilityLabel = config.content
         contentLabel.setAndesStyle(style: config.getContentStyle())
+        contentLabel.numberOfLines = 0
         renderTitleIfNeeded()
         renderCloseButtonIfNeeded()
     }
@@ -77,6 +78,7 @@ class AndesTooltipAbstractView: UIView, AndesTooltipView {
         titleLabel.text = title
         titleLabel.accessibilityLabel = config.title
         titleLabel.setAndesStyle(style: config.getTitleStyle())
+        titleLabel.numberOfLines = 0
     }
 
     private func renderCloseButtonIfNeeded() {
