@@ -10,8 +10,8 @@ parameters:
     default: ""
 
 orbs:
-  meli: mercadolibre/ios@dev:public
-
+  meli: mercadolibre/ios@volatile
+  
 workflows:
   ci:
     when:
