@@ -9,11 +9,11 @@ import Foundation
 
 extension AndesBaseTooltipView {
 
-    func show(target targetView: UIView, withinSuperview superview: UIView, position: AndesTooltipPosition, fixedWidth: CGFloat?) {
+    func show(target targetView: UIView, withinSuperview superview: UIView, position: AndesTooltipPosition, sizeStyle: AndesTooltipWidthSize = .dynamic) {
 
         self.bubblePosition = position
         presentingView = targetView
-        arrange(withinSuperview: superview, fixedWidth: fixedWidth)
+        arrange(withinSuperview: superview, sizeStyle: sizeStyle)
         superview.addSubview(self)
         self.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
 

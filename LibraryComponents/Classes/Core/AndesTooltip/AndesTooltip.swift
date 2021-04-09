@@ -20,7 +20,7 @@ import Foundation
     let primaryAction: AndesTooltipAction?
     let secondaryAction: AndesTooltipAction?
 
-    let fixedWidth: CGFloat?
+    let sizeStyle: AndesTooltipWidthSize
 
     /// Block that is executed when the tooltip disappears.
    @objc public var dismissHandler: (() -> Void)?
@@ -64,17 +64,17 @@ import Foundation
     ///   - title: String representing title of tooltip
     ///   - isDismissable: Boolean representing if the tooltip has a close button
     ///   - primaryLoudAction: Action with style Loud
-    ///   - matchWidthParent: Same width as parent view
+    ///   - sizeStyle: size style of tooltip
     @objc public convenience init(
         type: AndesTooltipType,
         content: String,
         title: String? = nil,
         isDismissable: Bool = true,
         primaryLoudAction: AndesTooltipAction? = nil,
-        fixedWidth: CGFloat
+        sizeStyle: AndesTooltipWidthSize
     ) {
         primaryLoudAction?.configure(with: .loud)
-        self.init(content: content, title: title, isDismissable: isDismissable, type: type, primaryAction: primaryLoudAction, fixedWidth: fixedWidth)
+        self.init(content: content, title: title, isDismissable: isDismissable, type: type, primaryAction: primaryLoudAction, sizeStyle: sizeStyle)
     }
 
     /// Constructor for tooltip
@@ -125,7 +125,7 @@ import Foundation
     ///   - isDismissable: Boolean representing if the tooltip has a close button
     ///   - primaryLoudAction: Action with style loud
     ///   - secondaryTransparentAction: Action with style transparent
-    ///   - matchWidthParent: Same width as parent view
+    ///   - sizeStyle: size style of tooltip
     @objc public convenience init(
         type: AndesTooltipType,
         content: String,
@@ -133,12 +133,12 @@ import Foundation
         isDismissable: Bool = true,
         primaryLoudAction: AndesTooltipAction,
         secondaryTransparentAction: AndesTooltipAction,
-        fixedWidth: CGFloat
+        sizeStyle: AndesTooltipWidthSize
 
     ) {
         primaryLoudAction.configure(with: .loud)
         secondaryTransparentAction.configure(with: .transparent)
-        self.init(content: content, title: title, isDismissable: isDismissable, type: type, primaryAction: primaryLoudAction, secondaryAction: secondaryTransparentAction, fixedWidth: fixedWidth)
+        self.init(content: content, title: title, isDismissable: isDismissable, type: type, primaryAction: primaryLoudAction, secondaryAction: secondaryTransparentAction, sizeStyle: sizeStyle)
     }
 
     /// Constructor for special light tooltip
@@ -184,7 +184,7 @@ import Foundation
         type: AndesTooltipType,
         primaryAction: AndesTooltipAction? = nil,
         secondaryAction: AndesTooltipAction? = nil,
-        fixedWidth: CGFloat? = nil) {
+        sizeStyle: AndesTooltipWidthSize = .fullSize) {
 
         self.content = content
         self.title = title
@@ -192,7 +192,7 @@ import Foundation
         self.type = type
         self.primaryAction = primaryAction
         self.secondaryAction = secondaryAction
-        self.fixedWidth = fixedWidth
+        self.sizeStyle = sizeStyle
         super.init(frame: .zero)
         setup()
     }

@@ -32,7 +32,7 @@ internal struct AndesTooltipViewConfig {
     let primaryActionOnPressed: (() -> Void)?
     let secondaryActionOnPressed: (() -> Void)?
 
-    let fixedWidth: CGFloat?
+    let sizeStyle: AndesTooltipWidthSize
 
     init(type: AndesTooltipTypeProtocol,
          title: String?,
@@ -42,7 +42,7 @@ internal struct AndesTooltipViewConfig {
          secondaryActionConfig: AndesButtonViewConfig?,
          primaryActionOnPressed: (() -> Void)?,
          secondaryActionOnPressed: (() -> Void)?,
-         fixedWidth: CGFloat?) {
+         sizeStyle: AndesTooltipWidthSize) {
         backgroundColor = type.backgroundColor
         maxWidth = type.maxWidth
         shadowOffset = type.shadowOffset
@@ -59,7 +59,7 @@ internal struct AndesTooltipViewConfig {
         self.secondaryActionConfig = secondaryActionConfig
         self.primaryActionOnPressed = primaryActionOnPressed
         self.secondaryActionOnPressed = secondaryActionOnPressed
-        self.fixedWidth = fixedWidth
+        self.sizeStyle = sizeStyle
     }
 
     func getTitleStyle() -> AndesFontStyle {

@@ -17,10 +17,6 @@ internal class AndesTooltipViewConfigFactory {
 
         let secondaryActionConfig = createActionConfig(tooltipAction: tooltip.secondaryAction, tooltipType: tooltip.type)
 
-        let maxWidth = UIScreen.main.bounds.width
-
-        let fixedWidth = tooltip.fixedWidth ?? 0 > maxWidth ? maxWidth : tooltip.fixedWidth
-
         let config = AndesTooltipViewConfig(
             type: typeIns,
             title: tooltip.title,
@@ -30,7 +26,7 @@ internal class AndesTooltipViewConfigFactory {
             secondaryActionConfig: secondaryActionConfig,
             primaryActionOnPressed: tooltip.primaryAction?.onPressed,
             secondaryActionOnPressed: tooltip.secondaryAction?.onPressed,
-            fixedWidth: fixedWidth
+            sizeStyle: tooltip.sizeStyle
         )
 
         return config

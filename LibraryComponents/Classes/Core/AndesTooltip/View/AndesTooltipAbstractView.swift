@@ -46,7 +46,7 @@ class AndesTooltipAbstractView: UIView, AndesTooltipView {
     }
 
     func show(in view: UIView, within superView: UIView, position: AndesTooltipPosition) {
-        tooltip.show(target: view, withinSuperview: superView, position: position, fixedWidth: config.fixedWidth)
+        tooltip.show(target: view, withinSuperview: superView, position: position, sizeStyle: config.sizeStyle)
     }
 
     @objc func dismiss() {
