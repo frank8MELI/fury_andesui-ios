@@ -1,6 +1,6 @@
 # 3.27.14
 ### 🚀 Features
-- Test build public private 
+- Test build public private with fury create-version
 
 # 3.26.0
 ### 🚀 Features
