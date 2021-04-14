@@ -1,16 +1,16 @@
 PODS:
-  - AndesUI (3.27.14):
-    - AndesUI/Core (= 3.27.14)
-  - AndesUI/AndesBottomSheet (3.27.14):
+  - AndesUI (3.27.15):
+    - AndesUI/Core (= 3.27.15)
+  - AndesUI/AndesBottomSheet (3.27.15):
     - AndesUI/Core
-  - AndesUI/AndesCoachmark (3.27.14):
+  - AndesUI/AndesCoachmark (3.27.15):
     - AndesUI/Core
-  - AndesUI/AndesDropdown (3.27.14):
+  - AndesUI/AndesDropdown (3.27.15):
     - AndesUI/AndesBottomSheet
     - AndesUI/Core
-  - AndesUI/Core (3.27.14):
+  - AndesUI/Core (3.27.15):
     - AndesUI/LocalIcons
-  - AndesUI/LocalIcons (3.27.14)
+  - AndesUI/LocalIcons (3.27.15)
   - Firebase/Analytics (7.8.0):
     - Firebase/Core
   - Firebase/Core (7.8.0):
