@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'AndesUI'
-    s.version          = '3.27.15'
+    s.version          = '3.27.16'
     s.summary          = 'AndesUI library for ios app.'
     
     s.description      = 'AndesUI is the UI library of Mercado Libre. It provides the definitions, components and tools to build consistent experiences, with agility and visual quality.'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/mercadolibre/fury_andesui-ios'
     s.license          = { :type => 'MIT' }
     s.author           = 'Mercado Libre'
-    s.source           = { :http => "https://artifacts.mercadolibre.com/repository/ios-releases/Alpesuiprueba/#{s.version}/AndesUI.zip" }
+    s.source           = { :http => "https://artifacts.mercadolibre.com/repository/ios-releases/AndesUI/#{s.version}/AndesUI.zip" }
     s.platform         = :ios, '10.0'
     s.requires_arc     = true
     s.swift_version = '5.0'
