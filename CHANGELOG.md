@@ -1,6 +1,6 @@
-# 3.27.14
+# 3.27.16
 ### 🚀 Features
-- Test build public private with fury create-version
+- Internal test (build public private (bintray & nexus) with fury create-version) 
 
 # 3.26.0
 ### 🚀 Features
