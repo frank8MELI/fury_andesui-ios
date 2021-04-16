@@ -184,7 +184,7 @@ import Foundation
         type: AndesTooltipType,
         primaryAction: AndesTooltipAction? = nil,
         secondaryAction: AndesTooltipAction? = nil,
-        sizeStyle: AndesTooltipWidthSize = .fullSize) {
+        sizeStyle: AndesTooltipWidthSize = .dynamic) {
 
         self.content = content
         self.title = title
