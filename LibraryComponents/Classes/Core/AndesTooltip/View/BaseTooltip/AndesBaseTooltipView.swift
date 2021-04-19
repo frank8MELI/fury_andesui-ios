@@ -128,6 +128,8 @@ class AndesBaseTooltipView: UIView {
 
         var frame = computeFrame(arrowPosition: position, refViewFrame: refViewFrame, superviewFrame: superviewFrame, sizeStyle: sizeStyle)
 
+        frame.origin.x = sizeStyle == .fullSize ? 16.0 : frame.origin.x
+
         if !isFrameValid(frame, forRefViewFrame: refViewFrame, superViewFrame: superviewFrame) {
             let (newFrame, newPosition) = createValidFrame(
                 frame,
