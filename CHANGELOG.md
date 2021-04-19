@@ -1,3 +1,7 @@
+# 3.27.16
+### 🚀 Features
+- Internal test (build public private (bintray & nexus) with fury create-version) 
+
 # 3.26.0
 ### 🚀 Features
 - Proper horizontal align for radiobutton with no text label. Center radiobutton vertically with text | Author: [@vveltri](https://github.com/vveltri)
