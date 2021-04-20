@@ -23,7 +23,9 @@ class AndesBaseTooltipView: UIView {
     private let content: UIView
     private let cornerRadius: CGFloat = 6
     var bubblePosition: AndesTooltipPosition = .top
-    private let maxFullSize = UIScreen.main.bounds.width - 32.0
+    private static let fullSizeRightInset = CGFloat(16.0)
+    private static let fullSizeLeftInset = CGFloat(16.0)
+    private let maxFullSize = UIScreen.main.bounds.width - fullSizeRightInset - fullSizeLeftInset
 
     // arrow properties
     private let arrowHeight: CGFloat = 8
@@ -128,7 +130,7 @@ class AndesBaseTooltipView: UIView {
 
         var frame = computeFrame(arrowPosition: position, refViewFrame: refViewFrame, superviewFrame: superviewFrame, sizeStyle: sizeStyle)
 
-        frame.origin.x = sizeStyle == .fullSize ? 16.0 : frame.origin.x
+        frame.origin.x = sizeStyle == .fullSize ? AndesBaseTooltipView.fullSizeLeftInset : frame.origin.x
 
         if !isFrameValid(frame, forRefViewFrame: refViewFrame, superViewFrame: superviewFrame) {
             let (newFrame, newPosition) = createValidFrame(
