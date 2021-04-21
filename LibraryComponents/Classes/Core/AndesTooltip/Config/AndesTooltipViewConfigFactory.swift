@@ -25,7 +25,8 @@ internal class AndesTooltipViewConfigFactory {
             primaryActionConfig: primaryActionConfig,
             secondaryActionConfig: secondaryActionConfig,
             primaryActionOnPressed: tooltip.primaryAction?.onPressed,
-            secondaryActionOnPressed: tooltip.secondaryAction?.onPressed
+            secondaryActionOnPressed: tooltip.secondaryAction?.onPressed,
+            sizeStyle: tooltip.sizeStyle
         )
 
         return config
