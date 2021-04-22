@@ -1,6 +1,8 @@
 # Unpublished
 ### 🚀 Features
 - Andes Tooltip fixed width option | Author: [@vveltri](https://github.com/vveltri)
+### 🛠 Bug fixes
+- Test app fix RadioButton  | Authors [dabeltran95](https://github.com/dabeltran95)
 
 # 3.27.16
 ### 🚀 Features

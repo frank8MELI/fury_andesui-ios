@@ -46,7 +46,7 @@ class AndesRadioButtonViewController: UIViewController, RadioButtonView {
     }
 
     @IBAction func clearTapped(_ sender: Any) {
-        self.radioButton.title = "Andes RadioButton"
+        self.radioButton.title = "Radio Button"
         self.radioButton.type = .idle
         self.radioButton.status = .unselected
         self.radioButton.align = .left
