@@ -11,6 +11,7 @@ import Foundation
 internal struct AndesCheckboxViewConfig {
 
     var title: String?
+    var titleNumberOfLines: Int = 1
     var icon: String?
     var borderColor: UIColor?
     var textColor: UIColor!
@@ -36,5 +37,6 @@ internal struct AndesCheckboxViewConfig {
         self.borderColor = type.borderColor
         self.borderSize = type.borderSize
         self.backgroundColor = type.backgroundColor
+        self.titleNumberOfLines = checkbox.titleNumberOfLines
     }
 }

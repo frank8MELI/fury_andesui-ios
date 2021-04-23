@@ -11,9 +11,7 @@ class AndesCheckboxDefaultView: UIView, AndesCheckboxView {
 
     @IBOutlet weak var label: UILabel!
 
-    @IBOutlet weak var labelToLeftButtonConstraint: NSLayoutConstraint!
     @IBOutlet weak var labelToLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var labelToRightButtonConstraint: NSLayoutConstraint!
     @IBOutlet weak var labelToTrailingConstraint: NSLayoutConstraint!
 
     @IBOutlet weak var leftBox: UIImageView!
@@ -83,6 +81,8 @@ class AndesCheckboxDefaultView: UIView, AndesCheckboxView {
     func updateView() {
         clearView()
         self.label.text = config.title
+        self.label.numberOfLines = config.titleNumberOfLines
+        self.label.lineBreakMode = .byTruncatingTail
         updateBoxesViews()
         updateBoxesBorders()
         updateIcons()
@@ -113,19 +113,19 @@ class AndesCheckboxDefaultView: UIView, AndesCheckboxView {
             self.leftBox.isHidden = false
             self.leftBox.backgroundColor = config.backgroundColor
             self.leftBox.layer.cornerRadius = config.cornerRadius
-            self.labelToTrailingConstraint.priority = .defaultHigh
-            self.labelToRightButtonConstraint.priority = .defaultLow
-            self.labelToLeftButtonConstraint.priority = .defaultHigh
-            self.labelToLeadingConstraint.priority = .defaultLow
+            // Avoids label and check overlapping
+            self.labelToLeadingConstraint.constant = 28.0
+            // Adjust the leading label to show behind the hidden right check box
+            self.labelToTrailingConstraint.constant = 12.0
         } else {
             self.rightBox.isHidden = false
             self.leftBox.isHidden = true
             self.rightBox.backgroundColor = config.backgroundColor
             self.rightBox.layer.cornerRadius = config.cornerRadius
-            self.labelToTrailingConstraint.priority = .defaultLow
-            self.labelToRightButtonConstraint.priority = .defaultHigh
-            self.labelToLeftButtonConstraint.priority = .defaultLow
-            self.labelToLeadingConstraint.priority = .defaultHigh
+            // Adjust the leading label to show behind the hidden left check box
+            self.labelToLeadingConstraint.constant = 12.0
+            // Avoids label and check overlapping
+            self.labelToTrailingConstraint.constant = 28.0
         }
     }
 

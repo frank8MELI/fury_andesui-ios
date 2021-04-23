@@ -189,6 +189,28 @@ class AndesCheckboxTests: QuickSpec {
                     expect(checkbox.status).to(equal(AndesCheckboxStatus.unselected))
                 }
             }
+
+            context("When creating AndesCheckbox") {
+                it("Has the idle view type, left view align, unselected view status and default title number of lines(1)") {
+                    let checkbox = AndesCheckbox(type: .idle, align: .left, status: .unselected, title: "Checkbox")
+
+                    let configuration = AndesCheckboxViewConfig.init(for: checkbox)
+
+                    expect(configuration.titleNumberOfLines).to(equal(1))
+                }
+            }
+
+            context("When creating AndesCheckbox") {
+                it("Has the idle view type, left view align, unselected view status and title number of lines without limit") {
+                    let checkbox = AndesCheckbox(type: .idle, align: .left, status: .unselected, title: "Checkbox")
+
+                    checkbox.titleNumberOfLines = 0
+
+                    let configuration = AndesCheckboxViewConfig.init(for: checkbox)
+
+                    expect(configuration.titleNumberOfLines).to(equal(0))
+                }
+            }
         }
     }
 }
