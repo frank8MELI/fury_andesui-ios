@@ -13,6 +13,22 @@ pod "AndesUI"
 
 then run pod install.
 
+> **_NOTE:_**   Do you want to use exclusivly `AndesCoachmark`, `AndesBottomSheet` or `AndesDropdown`?
+</br> Any of these components will also bring all the core AndesUI components.
+
+</br>**AndesCoachmark:** 
+```ruby
+pod "AndesUI/AndesCoachmark"
+```
+</br>**AndesBottomSheet:** 
+```ruby
+pod "AndesUI/AndesBottomSheet"
+```
+</br>**AndesDropdown:** 
+```ruby
+pod "AndesUI/AndesDropdown"
+```
+
 ## Useful links
 
 * [Wiki](https://github.com/mercadolibre/fury_andesui-ios/wiki)
