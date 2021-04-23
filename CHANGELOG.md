@@ -2,6 +2,10 @@
 ### 🚀 Features
 - Internal test new token
 - Andes Tooltip fixed width option | Author: [@vveltri](https://github.com/vveltri)
+- Andes new documentation format in `/docs/guide`. | Authors [GerardoTCMeLi](https://github.com/GerardoTCMeLi)
+
+# 3.27.16
+### 🚀 Features
 - Internal test (build public private (bintray & nexus) with fury create-version) 
 
 # 3.26.0
