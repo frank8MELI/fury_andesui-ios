@@ -13,7 +13,7 @@ pod "AndesUI"
 
 then run pod install.
 
-> **_NOTE:_**   Do you want to use exclusivly `AndesCoachmark`, `AndesBottomSheet` or `AndesDropdown`?
+> **_NOTE:_**   Do you want to use exclusively `AndesCoachmark`, `AndesBottomSheet` or `AndesDropdown`?
 </br> Any of these components will also bring all the core AndesUI components.
 
 </br>**AndesCoachmark:** 
