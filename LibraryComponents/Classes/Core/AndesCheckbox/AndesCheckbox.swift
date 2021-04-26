@@ -39,6 +39,13 @@ import UIKit
         }
     }
 
+    /// Sets the title Number of Lines of the AndesCheckbox , default 1
+    @objc public var titleNumberOfLines: Int = 1 {
+        didSet {
+            self.updateContentView()
+        }
+    }
+
     /// Callback invoked when checkbox button is tapped
     internal var didTapped: ((AndesCheckbox) -> Void)?
 

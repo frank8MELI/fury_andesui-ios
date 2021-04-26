@@ -1,6 +1,7 @@
 # 3.28.0 Unpublished
 ### 🛠 Bug fixes
 - Test app fix RadioButton  | Authors [dabeltran95](https://github.com/dabeltran95)
+- Checkbox title multiline fix | Authors [mabecerra-Meli](https://github.com/mabecerra-MeLi)
 
 # 3.27.17
 ### 🚀 Features
