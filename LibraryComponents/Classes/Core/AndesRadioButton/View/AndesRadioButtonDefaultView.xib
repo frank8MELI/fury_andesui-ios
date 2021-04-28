@@ -51,13 +51,13 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="UBx-hG-Q69" firstAttribute="top" secondItem="d18-F7-uIb" secondAttribute="top" constant="6" id="32Y-f7-O4q"/>
                 <constraint firstItem="UBx-hG-Q69" firstAttribute="leading" secondItem="1Wf-Ci-oc3" secondAttribute="trailing" priority="750" constant="4" id="4EE-Lz-XmI"/>
                 <constraint firstItem="tMQ-xe-WWY" firstAttribute="leading" secondItem="d18-F7-uIb" secondAttribute="leading" constant="4" id="E7V-gY-uPh"/>
-                <constraint firstItem="tMQ-xe-WWY" firstAttribute="top" secondItem="d18-F7-uIb" secondAttribute="top" constant="6" id="Nz4-nm-ZcF"/>
                 <constraint firstItem="1Wf-Ci-oc3" firstAttribute="leading" secondItem="d18-F7-uIb" secondAttribute="leading" priority="250" constant="12" id="TeU-4P-92b"/>
                 <constraint firstItem="1Wf-Ci-oc3" firstAttribute="top" secondItem="d18-F7-uIb" secondAttribute="top" constant="12" id="aXd-WI-HlA"/>
                 <constraint firstAttribute="bottom" secondItem="1Wf-Ci-oc3" secondAttribute="bottom" constant="12" id="exm-ys-R35"/>
+                <constraint firstItem="1Wf-Ci-oc3" firstAttribute="top" secondItem="UBx-hG-Q69" secondAttribute="top" constant="6" id="r3N-2i-xfx"/>
+                <constraint firstItem="1Wf-Ci-oc3" firstAttribute="top" secondItem="tMQ-xe-WWY" secondAttribute="top" constant="6" id="saY-fX-DBu"/>
                 <constraint firstAttribute="trailing" secondItem="UBx-hG-Q69" secondAttribute="trailing" constant="4" id="uFe-6X-uGh"/>
                 <constraint firstAttribute="trailing" secondItem="1Wf-Ci-oc3" secondAttribute="trailing" priority="250" constant="12" id="uGC-e4-iLB"/>
                 <constraint firstItem="1Wf-Ci-oc3" firstAttribute="leading" secondItem="tMQ-xe-WWY" secondAttribute="trailing" constant="4" id="uO2-4H-fYY"/>
