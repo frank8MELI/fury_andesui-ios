@@ -1,5 +1,7 @@
 
 # 3.28.1(Unpublished)
+### ⚙️ Other
+- README file updated | Authors [GerardoTCMeLi](https://github.com/GerardoTCMeLi)
 ### 🛠 Bug fixes
 - Rollback Test app fix RadioButton  | Authors [dabeltran95](https://github.com/dabeltran95)
 
@@ -13,7 +15,6 @@
 - Internal test new token
 - Andes Tooltip fixed width option | Author: [@vveltri](https://github.com/vveltri)
 - Andes new documentation format in `/docs/guide`. | Authors [GerardoTCMeLi](https://github.com/GerardoTCMeLi)
-- README file updated | Authors [GerardoTCMeLi](https://github.com/GerardoTCMeLi)
 
 # 3.27.16
 ### 🚀 Features
