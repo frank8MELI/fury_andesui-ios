@@ -17,6 +17,12 @@ import UIKit
             self.updateContentView()
         }
     }
+    /// Sets the attributed title of the RadioButton
+    @IBInspectable public var attributedTitle: NSMutableAttributedString? {
+        didSet {
+            self.updateContentView()
+        }
+    }
 
     /// Sets the number of lines the title of the RadioButton
     public var titleNumberOfLines: Int? {
@@ -64,12 +70,14 @@ import UIKit
         setup()
     }
 
-    @objc public init(type: AndesRadioButtonType, align: AndesRadioButtonAlign, status: AndesRadioButtonStatus, title: String) {
+    @objc public init(type: AndesRadioButtonType, align: AndesRadioButtonAlign, status: AndesRadioButtonStatus, title: String, attributedTitle: NSMutableAttributedString) {
         super.init(frame: .zero)
         self.title = title
         self.type = type
         self.align = align
         self.status = status
+        self.attributedTitle = attributedTitle
+
         setup()
     }
 

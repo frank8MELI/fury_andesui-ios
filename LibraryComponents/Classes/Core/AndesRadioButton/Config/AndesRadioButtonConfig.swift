@@ -10,6 +10,7 @@ import Foundation
 /// used to define the ui of internal AndesRadioButton views
 internal struct AndesRadioButtonConfig {
     var title: String?
+    var attributedTitle: NSMutableAttributedString?
     var tintColor: UIColor?
     var textColor: UIColor!
     var align: AndesRadioButtonAlign = AndesRadioButtonAlign.left
@@ -23,6 +24,7 @@ internal struct AndesRadioButtonConfig {
 
     init(for radiobutton: AndesRadioButton) {
         self.title = radiobutton.title
+        self.attributedTitle = radiobutton.attributedTitle
         self.align = radiobutton.align
         self.type = AndesRadioButtonTypeFactory.provide(radiobutton.type, status: radiobutton.status)
         self.textColor = type.textColor
