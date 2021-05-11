@@ -75,7 +75,7 @@ class AndesRadioButtonDefaultView: UIView, AndesRadioButtonView {
     }
 
     func updateView() {
-        self.radioButtonLabel = config.label
+        config.label = radioButtonLabel
         self.radioButtonLabel.text = config.title
         self.radioButtonLabel.attributedText = config.attributedTitle
         self.radioButtonLabel.setAndesStyle(style: AndesStyleSheetManager.styleSheet.bodyM(color: config.textColor))
