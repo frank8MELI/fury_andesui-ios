@@ -24,6 +24,12 @@ import UIKit
         }
     }
 
+    /// Sets Label of the RadioButton
+     public var radioButtonLabel: UILabel? {
+        didSet {
+            self.updateContentView()
+        }
+    }
     /// Sets the number of lines the title of the RadioButton
     public var titleNumberOfLines: Int? {
         didSet {
