@@ -25,7 +25,7 @@ import UIKit
     }
 
     /// Sets Label of the RadioButton
-     public var radioButtonLabel: UILabel? {
+     public var label: UILabel? {
         didSet {
             self.updateContentView()
         }
@@ -76,14 +76,14 @@ import UIKit
         setup()
     }
 
-    @objc public init(type: AndesRadioButtonType, align: AndesRadioButtonAlign, status: AndesRadioButtonStatus, title: String, attributedTitle: NSMutableAttributedString, radioButtonLabel: UILabel) {
+    @objc public init(type: AndesRadioButtonType, align: AndesRadioButtonAlign, status: AndesRadioButtonStatus, title: String, attributedTitle: NSMutableAttributedString, label: UILabel) {
         super.init(frame: .zero)
         self.title = title
         self.type = type
         self.align = align
         self.status = status
         self.attributedTitle = attributedTitle
-        self.radioButtonLabel = radioButtonLabel
+        self.label = label
 
         setup()
     }

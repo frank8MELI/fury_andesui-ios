@@ -11,7 +11,7 @@ import Foundation
 internal struct AndesRadioButtonConfig {
     var title: String?
     var attributedTitle: NSMutableAttributedString?
-    var radioButtonLabel: UILabel?
+    var label: UILabel?
     var tintColor: UIColor?
     var textColor: UIColor!
     var align: AndesRadioButtonAlign = AndesRadioButtonAlign.left
@@ -26,7 +26,7 @@ internal struct AndesRadioButtonConfig {
     init(for radiobutton: AndesRadioButton) {
         self.title = radiobutton.title
         self.attributedTitle = radiobutton.attributedTitle
-        self.radioButtonLabel = radiobutton.radioButtonLabel
+        self.label = radiobutton.label
         self.align = radiobutton.align
         self.type = AndesRadioButtonTypeFactory.provide(radiobutton.type, status: radiobutton.status)
         self.textColor = type.textColor

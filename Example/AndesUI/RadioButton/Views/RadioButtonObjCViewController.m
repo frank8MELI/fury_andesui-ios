@@ -57,7 +57,7 @@
 - (void)addIdelRadioButtons : (UIStackView *)stackView
 {
     //LEFT
-    AndesRadioButton* selectedStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusSelected title:@"Idle Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Selected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* selectedStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusSelected title:@"Idle Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Selected"]label:[UILabel new]];
     
   
     
@@ -67,7 +67,7 @@
         
     [stackView addArrangedSubview:selectedStack];
     
-    AndesRadioButton* unselectedStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Idle Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Unselected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* unselectedStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Idle Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Unselected"]label:[UILabel new]];
     
 
     [unselectedStack setRadioButtonTappedWithCallback:^(AndesRadioButton * unselectedStack) {
@@ -78,7 +78,7 @@
             
     //RIGHT
     
-    AndesRadioButton* selectedRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Idle Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Unselected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* selectedRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Idle Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Unselected"]label:[UILabel new]];
 
     
     [selectedRightStack setRadioButtonTappedWithCallback:^(AndesRadioButton * selectedRightStack) {
@@ -87,7 +87,7 @@
         
     [stackView addArrangedSubview:selectedRightStack];
     
-    AndesRadioButton* unselectedRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Idle Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Unselected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* unselectedRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeIdle align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Idle Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Idle Unselected"]label:[UILabel new]];
     
     [unselectedRightStack setRadioButtonTappedWithCallback:^(AndesRadioButton * unselectedRightStack) {
           [self didRadiobuttonTap:unselectedRightStack];
@@ -104,23 +104,23 @@
     [stackView addArrangedSubview:disabledTitle];
     
     //DISABLED
-    AndesRadioButton* disabledStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeDisabled align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Disabled Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Disabled Selected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* disabledStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeDisabled align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Disabled Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Disabled Selected"]label:[UILabel new]];
    
     
     [stackView addArrangedSubview:disabledStack];
     
-    AndesRadioButton* selectedRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeDisabled align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Disabled Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Disabled Selected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* selectedRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeDisabled align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Disabled Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Disabled Selected"]label:[UILabel new]];
     
     
     [stackView addArrangedSubview:selectedRightStack];
     
-    AndesRadioButton* unselectedStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeDisabled align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Disabled Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Disabled Selected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* unselectedStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeDisabled align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Disabled Selected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Disabled Selected"]label:[UILabel new]];
         
         
     [stackView addArrangedSubview:unselectedStack];
             
     //ERROR
-    AndesRadioButton* unselectedErrorStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeError align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Error Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Error Unselected"]radioButtonLabel:[UILabel new] ];
+    AndesRadioButton* unselectedErrorStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeError align:AndesRadioButtonAlignLeft status:AndesRadioButtonStatusUnselected title:@"Error Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Error Unselected"]label:[UILabel new] ];
     
     
     [unselectedErrorStack setRadioButtonTappedWithCallback:^(AndesRadioButton * unselectedErrorStack) {
@@ -129,7 +129,7 @@
     
     [stackView addArrangedSubview:unselectedErrorStack];
     
-    AndesRadioButton* unselectedErrorRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeError align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Error Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Error Unselected"]radioButtonLabel:[UILabel new]];
+    AndesRadioButton* unselectedErrorRightStack = [[AndesRadioButton alloc] initWithType:AndesRadioButtonTypeError align:AndesRadioButtonAlignRight status:AndesRadioButtonStatusUnselected title:@"Error Unselected" attributedTitle:[[NSMutableAttributedString alloc] initWithString:@"Error Unselected"]label:[UILabel new]];
     
     
      [unselectedErrorRightStack setRadioButtonTappedWithCallback:^(AndesRadioButton * unselectedErrorRightStack) {
